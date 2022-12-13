@@ -86,10 +86,26 @@
 			// 
 			// nmcHealth
 			// 
+			this.nmcHealth.DecimalPlaces = 2;
+			this.nmcHealth.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcHealth.Location = new System.Drawing.Point(176, 104);
+			this.nmcHealth.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcHealth.Name = "nmcHealth";
 			this.nmcHealth.Size = new System.Drawing.Size(60, 20);
 			this.nmcHealth.TabIndex = 1;
+			this.nmcHealth.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcHealth.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// labelHealth
@@ -112,10 +128,26 @@
 			// 
 			// nmcAttack
 			// 
+			this.nmcAttack.DecimalPlaces = 2;
+			this.nmcAttack.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcAttack.Location = new System.Drawing.Point(176, 130);
+			this.nmcAttack.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAttack.Name = "nmcAttack";
 			this.nmcAttack.Size = new System.Drawing.Size(60, 20);
 			this.nmcAttack.TabIndex = 3;
+			this.nmcAttack.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAttack.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// label2
@@ -129,10 +161,26 @@
 			// 
 			// nmcDefense
 			// 
+			this.nmcDefense.DecimalPlaces = 2;
+			this.nmcDefense.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcDefense.Location = new System.Drawing.Point(176, 156);
+			this.nmcDefense.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcDefense.Name = "nmcDefense";
 			this.nmcDefense.Size = new System.Drawing.Size(60, 20);
 			this.nmcDefense.TabIndex = 5;
+			this.nmcDefense.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcDefense.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// checkHealth
@@ -157,10 +205,26 @@
 			// 
 			// nmcAgility
 			// 
+			this.nmcAgility.DecimalPlaces = 2;
+			this.nmcAgility.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcAgility.Location = new System.Drawing.Point(176, 182);
+			this.nmcAgility.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAgility.Name = "nmcAgility";
 			this.nmcAgility.Size = new System.Drawing.Size(60, 20);
 			this.nmcAgility.TabIndex = 8;
+			this.nmcAgility.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAgility.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// label4
@@ -174,10 +238,26 @@
 			// 
 			// nmcAccuracy
 			// 
+			this.nmcAccuracy.DecimalPlaces = 2;
+			this.nmcAccuracy.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcAccuracy.Location = new System.Drawing.Point(176, 208);
+			this.nmcAccuracy.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAccuracy.Name = "nmcAccuracy";
 			this.nmcAccuracy.Size = new System.Drawing.Size(60, 20);
 			this.nmcAccuracy.TabIndex = 10;
+			this.nmcAccuracy.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcAccuracy.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// label5
@@ -191,10 +271,26 @@
 			// 
 			// nmcResistance
 			// 
+			this.nmcResistance.DecimalPlaces = 2;
+			this.nmcResistance.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcResistance.Location = new System.Drawing.Point(176, 234);
+			this.nmcResistance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcResistance.Name = "nmcResistance";
 			this.nmcResistance.Size = new System.Drawing.Size(60, 20);
 			this.nmcResistance.TabIndex = 12;
+			this.nmcResistance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcResistance.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// label6
@@ -208,10 +304,26 @@
 			// 
 			// nmcCritChance
 			// 
+			this.nmcCritChance.DecimalPlaces = 2;
+			this.nmcCritChance.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcCritChance.Location = new System.Drawing.Point(176, 260);
+			this.nmcCritChance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcCritChance.Name = "nmcCritChance";
 			this.nmcCritChance.Size = new System.Drawing.Size(60, 20);
 			this.nmcCritChance.TabIndex = 14;
+			this.nmcCritChance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcCritChance.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// label7
@@ -225,10 +337,26 @@
 			// 
 			// nmcCritDamage
 			// 
+			this.nmcCritDamage.DecimalPlaces = 2;
+			this.nmcCritDamage.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
 			this.nmcCritDamage.Location = new System.Drawing.Point(176, 286);
+			this.nmcCritDamage.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcCritDamage.Name = "nmcCritDamage";
 			this.nmcCritDamage.Size = new System.Drawing.Size(60, 20);
 			this.nmcCritDamage.TabIndex = 16;
+			this.nmcCritDamage.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
 			this.nmcCritDamage.ValueChanged += new System.EventHandler(this.OnNumericValueChanged);
 			// 
 			// textHealth

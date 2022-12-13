@@ -12,13 +12,14 @@ namespace RandomStatsGenerator
 {
 	public partial class Form1 : Form
 	{
+		Random random = new Random();
 		const int maxValue = 100;
 		int sisa;
 
 		float total, power;
 
 		float health, attack, defense, agility, accuracy, resistance, critChance, critDamage;
-		int healthP, attackP, defenseP, agilityP, accuracyP, resistanceP, critChanceP, critDamageP;
+		double healthP, attackP, defenseP, agilityP, accuracyP, resistanceP, critChanceP, critDamageP;
 
 		public Form1()
 		{
@@ -47,12 +48,28 @@ namespace RandomStatsGenerator
 			CalculateRandom();
 		}
 
+		public double GetPseudoDoubleWithinRange(double lowerBound, double upperBound)
+		{
+			var rDouble = random.NextDouble();
+			var rRangeDouble = rDouble * (upperBound - lowerBound) + lowerBound;
+			return( rRangeDouble);
+		}
 		private void CalculateRandom()
 		{
-			Random rand = new Random();
-			var totalP = 0;
-			total = 0;
-			while (total < 95 || total > 100)
+			//Random rand = new Random();
+			//var totalP = 0;
+			//total = 0;
+
+			healthP = GetPseudoDoubleWithinRange(0.1, 0.35f);
+			attackP = GetPseudoDoubleWithinRange(0.01, 0.15f);
+			defenseP = GetPseudoDoubleWithinRange(0.01, 0.15f);
+			agilityP = GetPseudoDoubleWithinRange(0.01, 0.10f);
+			accuracyP = GetPseudoDoubleWithinRange(0.01, 0.05f);
+			resistanceP = GetPseudoDoubleWithinRange(0.025, 0.10f);
+			critChanceP = GetPseudoDoubleWithinRange(0.01, 0.05f);
+			critDamageP = GetPseudoDoubleWithinRange(0.01, 0.05f);
+
+			/*while (total < 95 || total > 100)
 			{
 				critDamageP = rand.Next(1, 5);
 				critChanceP = rand.Next(1, 5);
@@ -85,27 +102,29 @@ namespace RandomStatsGenerator
 				}
 				catch { }
 
-				nmcHealth.Text = healthP.ToString();
-				nmcAttack.Text = attackP.ToString();
-				nmcDefense.Text = defenseP.ToString();
-				nmcAgility.Text = agilityP.ToString();
-				nmcAccuracy.Text = accuracyP.ToString();
-				nmcResistance.Text = resistanceP.ToString();
-				nmcCritDamage.Text = critDamageP.ToString();
-				nmcCritChance.Text = critChanceP.ToString();
-			}			
+				
+			}*/
+
+			nmcHealth.Text = (healthP * 100).ToString();
+			nmcAttack.Text = (attackP * 100).ToString();
+			nmcDefense.Text =( defenseP * 100).ToString();
+			nmcAgility.Text = (agilityP * 100).ToString();
+			nmcAccuracy.Text = (accuracyP * 100).ToString();
+			nmcResistance.Text = (resistanceP * 100).ToString();
+			nmcCritDamage.Text = (critDamageP * 100).ToString();
+			nmcCritChance.Text = (critChanceP * 100).ToString();
 		}
 
 		private void CalculateNew()
 		{
-			health = (float)(nmcHealth.Value * maxValue / 100 * 4);
-			attack = (float)(nmcAttack.Value * maxValue / 100 * 4);
-			defense = (float)(nmcDefense.Value * maxValue / 100 * 4);
-			agility = (float)(nmcAgility.Value * maxValue / 100 * 4);
-			accuracy = (float)(nmcAccuracy.Value * maxValue / 100 * 4);
-			resistance = (float)(nmcResistance.Value * maxValue / 100 * 4);
-			critChance = (float)(nmcCritChance.Value * maxValue / 100 * 4);
-			critDamage = (float)(nmcCritDamage.Value * maxValue / 100 * 4);
+			health = (float)Math.Ceiling(nmcHealth.Value * maxValue / 100 * 4);
+			attack = (float)Math.Ceiling(nmcAttack.Value * maxValue / 100 * 4);
+			defense = (float)Math.Ceiling(nmcDefense.Value * maxValue / 100 * 4);
+			agility = (float)Math.Ceiling(nmcAgility.Value * maxValue / 100 * 4);
+			accuracy = (float)Math.Ceiling(nmcAccuracy.Value * maxValue / 100 * 4);
+			resistance = (float)Math.Ceiling(nmcResistance.Value * maxValue / 100 * 4);
+			critChance = (float)Math.Ceiling(nmcCritChance.Value * maxValue / 100 * 4);
+			critDamage = (float)Math.Ceiling(nmcCritDamage.Value * maxValue / 100 * 4);
 
 			textHealth.Text = health.ToString();
 			textAttack.Text = attack.ToString();
